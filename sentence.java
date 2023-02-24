@@ -2,7 +2,7 @@ import java.util.*;
 public class sentence{
 public static void WordFrequencies(String str) {
    HashMap<String, Integer> c = new HashMap<>();
-    String[] s = str.split("");
+    String[] s = str.split("\\s+");
     for (String w : s) {
         if (c.containsKey(w)) {
             c.put(w, c.get(w) + 1);

@@ -1,28 +1,57 @@
-import java.util.Scanner;
-public class methods{
-    public static void main(String[]args){
-System.out.print("Enter a 6-digit number: ");
-int number = input.nextInt();
+package mypackage;
 
-int oddSum = 0;
-int evenSum = 0;
+public class methods {
+    private int privateVar = 10;
+    int defaultVar = 20;
+    protected int protectedVar = 30;
+    public int publicVar = 40;
 
-while (number > 0) {
-   int digit = number % 10;
+    private void privateMethod() {
+        System.out.println("This is a private method.");
+    }
 
-   if (digit % 2 == 0) {
-      evenSum += Math.pow(digit, 2);
-   } else {
-      oddSum += Math.pow(digit, 3);
-   }
+    void defaultMethod() {
+        System.out.println("This is a default method.");
+    }
 
-   number /= 10;
+    protected void protectedMethod() {
+        System.out.println("This is a protected method.");
+    }
+
+    public void publicMethod() {
+        System.out.println("This is a public method.");
+    }
+
+    public static void main(String[] args) {
+        methods obj1 = new methods();
+        obj1.privateMethod();  // Compilation error: private access modifier
+        obj1.defaultMethod();  // Accessible within the same package
+        obj1.protectedMethod();  // Accessible within the same package and subclasses
+        obj1.publicMethod();  // Accessible anywhere
+
+        System.out.println(obj1.privateVar);  // Compilation error: private access modifier
+        System.out.println(obj1.defaultVar);  // Accessible within the same package
+        System.out.println(obj1.protectedVar);  // Accessible within the same package and subclasses
+        System.out.println(obj1.publicVar);  // Accessible anywhere
+    }
 }
 
-if (evenSum != 0) {
-   int division = oddSum / evenSum;
-   System.out.println("The division of the sum of the cubes of odd digits and sum of the squares of even digits is: " + division);
-} else {
-   System.out.println("The sum of even digits is zero, cannot divide.");
+package mypackage2;
+
+import mypackage.methods;
+
+public class MyClass2 extends methods{
+    public static void main(String[] args) {
+        MyClass2 obj2 = new MyClass2();
+        obj2.privateMethod();  // Compilation error: private access modifier
+        obj2.defaultMethod();  // Accessible within the same package
+        obj2.protectedMethod();  // Accessible within the same package and subclasses
+        obj2.publicMethod();  // Accessible anywhere
+
+        // System.out.println(obj2.privateVar);  // Compilation error: private access modifier
+        // System.out.println(obj2.defaultVar);  // Compilation error: default access modifier is not accessible outside the package
+        System.out.println(obj2.protectedVar);  // Accessible within the same package and subclasses
+        System.out.println(obj2.publicVar);  // Accessible anywhere
+    }
 }
-}}
+
