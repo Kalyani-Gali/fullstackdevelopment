@@ -1,0 +1,37 @@
+player 2 is declred as winner
+player1,player2
+Round 1,tails,heads
+Round 2,tails,heads
+Round 3,heads,tails
+Round 4,heads,tails
+Round 5,tails,heads
+Round 6,tails,heads
+Round 7,heads,tails
+Round 8,tails,heads
+Round 9,heads,tails
+Round 10,tails,heads
+player2
+player1,player2
+Round 1,heads,tails
+Round 2,tails,heads
+Round 3,tails,heads
+Round 4,tails,heads
+Round 5,heads,tails
+Round 6,tails,heads
+Round 7,tails,heads
+Round 8,tails,heads
+Round 9,tails,heads
+Round 10,tails,heads
+player2
+player1,player2
+Round 1,heads,tails
+Round 2,heads,tails
+Round 3,heads,tails
+Round 4,heads,tails
+Round 5,heads,tails
+Round 6,tails,heads
+Round 7,tails,heads
+Round 8,tails,heads
+Round 9,tails,heads
+Round 10,heads,tails
+player1
