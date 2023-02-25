@@ -1,0 +1,23 @@
+enter number of teams
+5
+India
+Pakistan
+WestIndies
+Afghanisthan
+Srilanka
+[IndiavsPakistan, IndiavsWestIndies, IndiavsAfghanisthan, IndiavsSrilanka, PakistanvsWestIndies, PakistanvsAfghanisthan, PakistanvsSrilanka, WestIndiesvsAfghanisthan, WestIndiesvsSrilanka, AfghanisthanvsSrilanka]
+India
+matches won by team:0
+matches lost by team:4
+Pakistan
+matches won by team:1
+matches lost by team:3
+WestIndies
+matches won by team:2
+matches lost by team:2
+Afghanisthan
+matches won by team:3
+matches lost by team:1
+Srilanka
+matches won by team:4
+matches lost by team:0
