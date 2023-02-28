@@ -1,0 +1,7 @@
+Morning Session Matches:
+Team 3vsTeam 2
+Team 2vsTeam 3
+Evening Session Matches:
+Team 5vsTeam 4
+Team 4vsTeam 1
+Team 1vsTeam 5
